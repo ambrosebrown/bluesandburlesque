@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Page Site</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* PAGE WRAPPER */
+.page {
+    width: 100%;
+    height: 100vh;
+    background-image: url('Blues and Burlesque-Cover.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* BUTTON HOLDER — positioned 2/3 down */
+.buttons {
+    position: absolute;
+    top: 66vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BUTTONS */
+.buttons a img {
+    width: 200px;
+    max-width: 25vw;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.buttons a img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+
+    /* Clip 30% from LEFT side */
+    .page {
+        background-position: 30% center;
+    }
+
+    .buttons {
+        top: 55vh;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .buttons a img {
+        width: 70%;
+        max-width: 280px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="buttons">
+        <a href="#">
+            <img src="adelaide.png" alt="Adelaide Tickets">
+        </a>
+
+        <a href="https://fringeworld.com.au/whats-on/blues-and-burlesque-fw2026">
+            <img src="perth.png" alt="Perth Tickets">
+        </a>
+
+        <a href="https://www.instagram.com/bluesandburlesque_uk/">
+            <img src="followus.png" alt="Follow Us">
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
+
