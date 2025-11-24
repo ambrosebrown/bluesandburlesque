@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>One Page Site</title>
+<title>Blues and Burlesque</title>
 
 <style>
 html, body {
@@ -69,6 +69,20 @@ html, body {
         width: 70%;
         max-width: 280px;
     }
+}
+
+@media (max-width: 1500px) {
+  body::before {
+    content:"MOBILE RULE IS WORKING";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: red;
+    color: white;
+    padding: 6px 10px;
+    z-index: 9999;
+    font-size: 14px;
+  }
 }
 </style>
 </head>
