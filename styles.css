@@ -1,0 +1,34 @@
+
+/* Mailing list banner */
+.mailing-list-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 20px;
+  background: #4b080b;
+  color: #d8ad55;
+  border-top: 2px solid #b88a37;
+  box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.35);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.mailing-list-banner:hover {
+  background: #650d12;
+  color: #f4d58a;
+}
+
+@media (max-width: 600px) {
+  .mailing-list-banner {
+    padding: 14px 12px;
+    font-size: 14px;
+    letter-spacing: 0.14em;
+  }
+}
