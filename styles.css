@@ -32,3 +32,30 @@
     letter-spacing: 0.14em;
   }
 }
+/* MAILING LIST BUTTON */
+.mailing-list-banner {
+    position: absolute;
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #4E0F05;
+    color: #C17F2F;
+    border: 2px solid #C17F2F;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+
+.mailing-list-banner:hover {
+    background-color: #C17F2F;
+    color: #4E0F05;
+    transform: translateX(-50%) scale(1.05);
+}
